@@ -136,6 +136,48 @@ a.button.secondary{
   height:56px;
   width:auto;
 }
+.chips{ margin-top:10px; display:flex; flex-wrap:wrap; gap:8px; }
+.chip{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(20,80,255,.25);
+  background:rgba(20,80,255,.06);
+  font-size:13px;
+  color:#1e3a8a;
+}
+
+.benefits{ margin-top:26px; }
+.benefits h2{
+  margin:0 0 14px 0;
+  font-size:18px;
+  color:#0f172a;
+}
+.benefit-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:14px;
+}
+.benefit-card{
+  padding:14px;
+  border-radius:16px;
+  border:1px solid rgba(15,23,42,.08);
+  background:rgba(255,255,255,.55);
+}
+.benefit-card h3{
+  margin:0 0 6px 0;
+  font-size:14px;
+  color:#0f172a;
+}
+.benefit-card p{
+  margin:0;
+  font-size:13px;
+  line-height:1.55;
+  color:#334155;
+}
+@media (max-width: 900px){
+  .benefit-grid{ grid-template-columns:1fr; }
+}
 </style>
 </head>
 
@@ -162,14 +204,37 @@ a.button.secondary{
     </p>
 
     <hr>
+<section class="benefits">
+  <h2>Ce que vous obtenez</h2>
+  <div class="benefit-grid">
+    <div class="benefit-card">
+      <h3>Évaluation & priorisation des risques</h3>
+      <p>Threat modeling des agents IA, surfaces d’attaque (prompts, outils, données, chaînes d’orchestration) et plan de remédiation actionnable.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>Tests offensifs & scénarios réalistes</h3>
+      <p>Prompt Injection, data leakage, contournement de garde-fous, abuse cases et validation des contrôles (OWASP Top 10 LLM / ATLAS).</p>
+    </div>
+    <div class="benefit-card">
+      <h3>Observabilité & gouvernance en production</h3>
+      <p>Traces, logs, détection d’abus, politiques de sécurité, monitoring et exigences de conformité pour un déploiement maîtrisé.</p>
+    </div>
+  </div>
+</section>
 
     <div class="offer">
       <div class="badge">🛡️</div>
       <div>
-        <strong>Programme expert — Agents IA sécurisés</strong>
+        <strong>Maîtrise et sécurisation des agents IA en production</strong>
         <div class="sub">
           Audit • Tests offensifs • Gouvernance • Monitoring
         </div>
+<div class="chips">
+  <span class="chip">OWASP Top 10 LLM</span>
+  <span class="chip">MITRE ATLAS</span>
+  <span class="chip">Red Teaming</span>
+  <span class="chip">Observabilité</span>
+</div>
       </div>
     </div>
 
@@ -188,6 +253,8 @@ a.button.secondary{
 
 </body>
 </html>
+
+
 
 
 
