@@ -1,0 +1,260 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>ASA AI — Sécurisation des agents IA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+:root{
+  --phoenix:#1E63FF;
+  --phoenix-dark:#0B3FD9;
+  --bg:#EAF1FF;
+  --card:#F2F6FF;
+  --ink:#0A2A55;
+  --muted:#355A9A;
+}
+
+body{
+  margin:0;
+  font-family:Segoe UI, Arial, sans-serif;
+  background:var(--bg);
+  min-height:100vh;
+}
+
+/* Logo top-right */
+.header{
+  position:absolute;
+  top:24px;
+  right:32px;
+}
+
+.header img{
+  height:48px;
+}
+
+/* Card */
+.wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding:32px;
+}
+
+.card{
+  background:var(--card);
+  width:min(760px,100%);
+  border-radius:22px;
+  padding:40px;
+  box-shadow:0 24px 48px rgba(30,99,255,.25);
+}
+
+h1{
+  margin-top:0;
+  color:var(--phoenix);
+  font-size:36px;
+}
+
+p{
+  color:var(--muted);
+  line-height:1.7;
+  font-size:16px;
+}
+
+hr{
+  border:none;
+  border-top:1px solid rgba(30,99,255,.25);
+  margin:28px 0;
+}
+
+.offer{
+  display:flex;
+  gap:16px;
+  align-items:flex-start;
+}
+
+.badge{
+  width:56px;
+  height:56px;
+  border-radius:16px;
+  background:rgba(30,99,255,.15);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.offer strong{
+  color:var(--ink);
+  font-size:18px;
+}
+
+.offer .sub{
+  color:var(--muted);
+  margin-top:6px;
+}
+
+.cta{
+  margin-top:28px;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+a.button{
+  background:var(--phoenix);
+  color:white;
+  padding:14px 24px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+}
+
+a.button:hover{
+  background:var(--phoenix-dark);
+}
+
+a.button.secondary{
+  background:white;
+  color:var(--phoenix);
+  border:2px solid var(--phoenix);
+}
+
+.meta{
+  margin-top:18px;
+  font-size:13px;
+  color:rgba(10,42,85,.75);
+}
+.title-block{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:12px;
+}
+
+.logo-inline{
+  height:56px;
+  width:auto;
+}
+.chips{ margin-top:10px; display:flex; flex-wrap:wrap; gap:8px; }
+.chip{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(20,80,255,.25);
+  background:rgba(20,80,255,.06);
+  font-size:13px;
+  color:#1e3a8a;
+}
+
+.benefits{ margin-top:26px; }
+.benefits h2{
+  margin:0 0 14px 0;
+  font-size:18px;
+  color:#0f172a;
+}
+.benefit-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:14px;
+}
+.benefit-card{
+  padding:14px;
+  border-radius:16px;
+  border:1px solid rgba(15,23,42,.08);
+  background:rgba(255,255,255,.55);
+}
+.benefit-card h3{
+  margin:0 0 6px 0;
+  font-size:14px;
+  color:#0f172a;
+}
+.benefit-card p{
+  margin:0;
+  font-size:13px;
+  line-height:1.55;
+  color:#334155;
+}
+@media (max-width: 900px){
+  .benefit-grid{ grid-template-columns:1fr; }
+}
+</style>
+</head>
+
+<body>
+
+
+
+<div class="wrapper">
+  <div class="card">
+
+    <div class="title-block">
+  <img src="./logo-asa-ai.png" alt="ASA AI" class="logo-inline">
+  <h1>Formations</h1>
+</div>
+
+    <p>
+      ASA AI propose des formations professionnelles dédiées à la
+      <strong>sécurisation des agents IA</strong> et des chaînes IA/ML/DL.
+      Les parcours couvrent l’<strong>évaluation de sécurité</strong>, la
+      <strong>compliance</strong> (OWASP Top 10 LLM, MITRE ATLAS, CSA),
+      le <strong>red teaming des agents</strong> et l’
+      <strong>observabilité</strong> des workflows IA en production
+      (traces, logs, détection d’abus, gouvernance).
+    </p>
+
+    <hr>
+<section class="benefits">
+  <h2>Ce que vous obtenez</h2>
+  <div class="benefit-grid">
+    <div class="benefit-card">
+      <h3>Évaluation & priorisation des risques</h3>
+      <p>Threat modeling des agents IA, surfaces d’attaque (prompts, outils, données, chaînes d’orchestration) et plan de remédiation actionnable.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>Tests offensifs & scénarios réalistes</h3>
+      <p>Prompt Injection, data leakage, contournement de garde-fous, abuse cases et validation des contrôles (OWASP Top 10 LLM / ATLAS).</p>
+    </div>
+    <div class="benefit-card">
+      <h3>Observabilité & gouvernance en production</h3>
+      <p>Traces, logs, détection d’abus, politiques de sécurité, monitoring et exigences de conformité pour un déploiement maîtrisé.</p>
+    </div>
+  </div>
+</section>
+
+    <div class="offer">
+      <div class="badge">🛡️</div>
+      <div>
+        <strong>Maîtrise et sécurisation des agents IA en production</strong>
+        <div class="sub">
+          Audit • Tests offensifs • Gouvernance • Monitoring
+        </div>
+<div class="chips">
+  <span class="chip">OWASP Top 10 LLM</span>
+  <span class="chip">MITRE ATLAS</span>
+  <span class="chip">Red Teaming</span>
+  <span class="chip">Observabilité</span>
+</div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a class="button" href="#">Accéder à l’offre →</a>
+      <a class="button secondary" href="#">Demander le programme</a>
+    </div>
+
+    <div class="meta">
+      Public : RSSI, architectes, DevSecOps, équipes produit IA —
+      Formats : 4h, 1 journée, intra-entreprise.
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
