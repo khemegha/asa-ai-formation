@@ -1,0 +1,9 @@
+﻿# Scripts utilitaires locaux
+Apply-Landing-Enhancements.ps1
+
+# Backups HTML
+index.html.bak_*
+
+# OS / outils
+.DS_Store
+Thumbs.db
